@@ -1,5 +1,4 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "extra_libraries") (type "KiCad") (uri "${KIPRJMOD}/libs/symbols/extra_libraries.pretty") (options "") (descr ""))
-	(lib (name "MPU") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/MPU.pretty") (options "") (descr ""))
+	(lib (name "ESP32") (type "KiCad") (uri "${KIPRJMOD}/libs/footprints/ESP32.pretty") (options "") (descr ""))
 )

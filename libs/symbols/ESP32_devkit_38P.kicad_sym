@@ -2,14 +2,24 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "ESP32_Devkit_1"
+	(symbol "esp32_1"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at 0 0 0)
+		(property "Reference" "U4"
+			(at 45.085 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 45.085 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -19,17 +29,7 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
+		(property "Footprint" "my_esp32:esp32"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62,32 +62,22 @@
 				)
 			)
 		)
-		(symbol "ESP32_Devkit_1_0_1"
+		(symbol "esp32_1_1_1"
 			(rectangle
-				(start -5.08 45.72)
-				(end 13.97 5.08)
+				(start 31.75 -5.08)
+				(end 58.42 -55.88)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "ESP32_Devkit_1_1_1"
-			(text "ESP32\n"
-				(at 3.556 47.498 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -7.62 43.18 0)
+			(pin power_in line
+				(at 29.21 -7.62 0)
 				(length 2.54)
-				(name "EN"
+				(name "3.3V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -102,10 +92,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -7.62 40.64 0)
+			(pin input line
+				(at 29.21 -10.16 0)
 				(length 2.54)
-				(name "D36"
+				(name "EN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -121,9 +111,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 38.1 0)
+				(at 29.21 -12.7 0)
 				(length 2.54)
-				(name "D39"
+				(name "GPIO36"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -139,9 +129,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 35.56 0)
+				(at 29.21 -15.24 0)
 				(length 2.54)
-				(name "D34"
+				(name "GPIO39"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -157,9 +147,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 33.02 0)
+				(at 29.21 -17.78 0)
 				(length 2.54)
-				(name "D35"
+				(name "GPIO34"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -175,9 +165,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 30.48 0)
+				(at 29.21 -20.32 0)
 				(length 2.54)
-				(name "D32"
+				(name "GPIO35"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -193,9 +183,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 27.94 0)
+				(at 29.21 -22.86 0)
 				(length 2.54)
-				(name "D33"
+				(name "GPIO32"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -211,9 +201,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 25.4 0)
+				(at 29.21 -25.4 0)
 				(length 2.54)
-				(name "D25"
+				(name "GPIO33"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -229,9 +219,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 22.86 0)
+				(at 29.21 -27.94 0)
 				(length 2.54)
-				(name "D26"
+				(name "GPIO25"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -247,9 +237,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 20.32 0)
+				(at 29.21 -30.48 0)
 				(length 2.54)
-				(name "D27"
+				(name "GPIO26"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -265,9 +255,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 17.78 0)
+				(at 29.21 -33.02 0)
 				(length 2.54)
-				(name "D14"
+				(name "GPIO27"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -283,9 +273,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 15.24 0)
+				(at 29.21 -35.56 0)
 				(length 2.54)
-				(name "D12"
+				(name "GPIO14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -301,9 +291,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 12.7 0)
+				(at 29.21 -38.1 0)
 				(length 2.54)
-				(name "D13"
+				(name "GPIO12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -318,8 +308,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -7.62 10.16 0)
+			(pin power_in line
+				(at 29.21 -40.64 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -337,9 +327,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -7.62 7.62 0)
+				(at 29.21 -43.18 0)
 				(length 2.54)
-				(name "VIN"
+				(name "GPIO9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -355,9 +345,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 43.18 180)
+				(at 29.21 -45.72 0)
 				(length 2.54)
-				(name "D23"
+				(name "GPIO11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -373,9 +363,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 40.64 180)
+				(at 29.21 -48.26 0)
 				(length 2.54)
-				(name "D22"
+				(name "GPIO13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -391,9 +381,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 38.1 180)
+				(at 29.21 -50.8 0)
 				(length 2.54)
-				(name "TX0(D1)"
+				(name "GPIO10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -408,10 +398,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 16.51 35.56 180)
+			(pin power_in line
+				(at 29.21 -53.34 0)
 				(length 2.54)
-				(name "RX0(D3)"
+				(name "VIN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -426,10 +416,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 16.51 33.02 180)
+			(pin power_in line
+				(at 60.96 -7.62 180)
 				(length 2.54)
-				(name "D21"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -445,9 +435,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 30.48 180)
+				(at 60.96 -10.16 180)
 				(length 2.54)
-				(name "D19"
+				(name "GPIO23"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -463,9 +453,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 27.94 180)
+				(at 60.96 -12.7 180)
 				(length 2.54)
-				(name "D18"
+				(name "GPIO22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -481,9 +471,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 25.4 180)
+				(at 60.96 -15.24 180)
 				(length 2.54)
-				(name "D5"
+				(name "GPIO1(TX0)"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -499,9 +489,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 22.86 180)
+				(at 60.96 -17.78 180)
 				(length 2.54)
-				(name "TX2(D17)"
+				(name "GPIO3(RX0)"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -517,9 +507,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 20.32 180)
+				(at 60.96 -20.32 180)
 				(length 2.54)
-				(name "RX2(D16)"
+				(name "GPIO21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -534,10 +524,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 16.51 17.78 180)
+			(pin power_in line
+				(at 60.96 -22.86 180)
 				(length 2.54)
-				(name "D4"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -553,9 +543,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 15.24 180)
+				(at 60.96 -25.4 180)
 				(length 2.54)
-				(name "D2"
+				(name "GPIO19"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -571,9 +561,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 12.7 180)
+				(at 60.96 -27.94 180)
 				(length 2.54)
-				(name "D15"
+				(name "GPIO18"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -589,9 +579,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 10.16 180)
+				(at 60.96 -30.48 180)
 				(length 2.54)
-				(name "GND"
+				(name "GPIO5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -607,9 +597,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 16.51 7.62 180)
+				(at 60.96 -33.02 180)
 				(length 2.54)
-				(name "3V3"
+				(name "GPIO17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -624,65 +614,148 @@
 					)
 				)
 			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "ESP32_Devkit_38P"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(pin bidirectional line
+				(at 60.96 -35.56 180)
+				(length 2.54)
+				(name "GPIO16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(pin bidirectional line
+				(at 60.96 -38.1 180)
+				(length 2.54)
+				(name "GPIO4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(pin bidirectional line
+				(at 60.96 -40.64 180)
+				(length 2.54)
+				(name "GPIO0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(pin bidirectional line
+				(at 60.96 -43.18 180)
+				(length 2.54)
+				(name "GPIO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(pin bidirectional line
+				(at 60.96 -45.72 180)
+				(length 2.54)
+				(name "GPIO15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 60.96 -48.26 180)
+				(length 2.54)
+				(name "GPIO8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 60.96 -50.8 180)
+				(length 2.54)
+				(name "GPIO7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 60.96 -53.34 180)
+				(length 2.54)
+				(name "GPIO6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
